@@ -3,13 +3,15 @@
 #include <string>
 
 namespace Lib 
-{
+{	
+	//Template print function
 	template <typename T>
 	void Print(T t)
 	{
 		std::cout << t << "\n";
 	}
-	
+
+	//Writes to textfile
 	void WriteToFile(std::string filePath)
 	{
 		std::ofstream file(filePath);
